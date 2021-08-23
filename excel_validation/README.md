@@ -1,7 +1,3 @@
-# ExcelSheet_Validation_Reactjs
-Read the excel file and validation of excel data
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
