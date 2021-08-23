@@ -1,6 +1,7 @@
 
 import React,{useState} from 'react';
 import * as XLSX from 'xlsx';
+import '../App.css';
 
  const ExcelValidation=()=>{
 
@@ -167,6 +168,7 @@ return formatedError;
 return (
 
     <div>
+        <h3>*****bulk upload file with validation*****</h3>
         <input type="file" onChange={(e)=>{
                 const file=e.target.files[0];
                 readExcel(file);
@@ -195,6 +197,7 @@ return (
                 </tbody>
             </table>
           <p>{formatedError}</p>
+    <div className='errorMsg'>*all error message*</div>
     </div>
 )
 }
