@@ -165,10 +165,14 @@ formatedError.concat("</lu>");
 console.log(formatedError);
 return formatedError;
 }
+
+const style={
+  color:"orange"
+}
 return (
 
     <div>
-        <h3>*****bulk upload file with validation*****</h3>
+        <h3 style={style}>*****bulk upload file with validation*****</h3>
         <input type="file" onChange={(e)=>{
                 const file=e.target.files[0];
                 readExcel(file);

@@ -25,9 +25,13 @@ const search=(rows)=>{
 }
 
 const columns=data[0]&& Object.keys(data[0]);
+
+const style={
+    color:"brown"
+}
     return (
         <div>
-            <p>*****searching according to user choice****</p>
+            <h3 style={style}>*****searching according to user choice****</h3>
             <input type="text" value={q} onChange={(e)=>setQ(e.target.value)}></input>
             {/* <DataTable data={data}/></DataTable> */}
             {columns&& columns.map((column)=><label>

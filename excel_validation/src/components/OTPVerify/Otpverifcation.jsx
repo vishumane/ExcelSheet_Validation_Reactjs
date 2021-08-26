@@ -15,12 +15,15 @@ const Otpverifcation = () => {
         }
     };
 
+        const style={
+            color:"purple"
+        }
     return (
         <>
             <div className="row">
                 <div className="col text-center">
-                    <h2>Welcome vishal</h2>
-                    <p>*****Enter the OTP sent to you to verify your identity****</p>
+                    <h3 style={style}>*****Enter the OTP sent to you to verify your identity****</h3>
+                    <h5>Welcome vishal</h5>
                         <p> Enter your OTP :1562</p>
                     {otp.map((data, index) => {
                         return (
